@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SEBELUM KAMU MEREM, BACA INI DULU 😭💗</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#ffb6d5;--hot:#ff6fa8;--violet:#2a1450;--navy:#0f1030;--ink:#fff}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0}
+body{background:linear-gradient(160deg,var(--navy),var(--violet) 70%,#4a2a7a);background-attachment:fixed;color:var(--ink);font-family:Nunito,system-ui,sans-serif;font-size:17px;line-height:1.55;min-height:100dvh;overflow-x:hidden}
+h1,h2{font-family:Pacifico,cursive;font-weight:400;line-height:1.3;margin:.3em 0;text-align:center;color:var(--pink);text-shadow:0 2px 14px rgba(255,111,168,.5)}
+h1{font-size:clamp(26px,8vw,38px)}h2{font-size:clamp(22px,6.5vw,30px)}
+#stars,#hearts{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.star{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;animation:tw 3s infinite ease-in-out}
+@keyframes tw{50%{opacity:.2;transform:scale(.6)}}
+.heart{position:absolute;bottom:-30px;animation:rise 7s linear forwards;opacity:.7}
+@keyframes rise{to{transform:translateY(-110vh) translateX(20px);opacity:0}}
+.scene{display:none;position:relative;z-index:1;min-height:100dvh;padding:64px 16px 32px;flex-direction:column;align-items:center;justify-content:center;gap:14px;max-width:500px;margin:0 auto}
+.scene.on{display:flex;animation:fade .6s}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}}
+.card{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.22);border-radius:22px;padding:18px;width:100%}
+.card p{margin:0 0 .8em;white-space:pre-line}
+.btn{display:block;width:100%;min-height:50px;padding:12px 18px;border:0;border-radius:999px;background:linear-gradient(135deg,#ff6fa8,#b46cff);color:#fff;font:800 16px Nunito,sans-serif;cursor:pointer;box-shadow:0 6px 18px rgba(255,111,168,.35);text-align:center}
+.btn:active{transform:scale(.97)}.btn.alt{background:rgba(255,255,255,.14);box-shadow:none;border:1px solid rgba(255,255,255,.3)}
+.btn:disabled{opacity:.5}
+.hide{display:none!important}
+.sub{text-align:center;opacity:.92}
+.react{background:rgba(255,182,213,.2);border-radius:16px;padding:12px;margin-top:10px;font-weight:700;animation:pop .4s}
+@keyframes pop{from{transform:scale(.85);opacity:0}}
+.opt{margin-top:10px;text-align:left;border-radius:16px}.shake{animation:shk .4s}
+@keyframes shk{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+#top{position:fixed;top:max(10px,env(safe-area-inset-top));right:10px;z-index:20;display:flex;gap:8px}
+#top button{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(15,16,48,.7);color:#fff;font-size:20px}
+#top button.off{opacity:.45}
+.env{position:relative;width:220px;height:140px;background:#f7b5d3;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.4);margin:10px auto}
+.env .paper{position:absolute;left:12px;right:12px;top:10px;bottom:10px;background:#fff;border-radius:6px;transition:transform .9s}
+.env .flap{position:absolute;left:0;right:0;top:0;height:75px;background:#f08cb8;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .7s}
+.env .front{position:absolute;inset:0;background:#f7b5d3;clip-path:polygon(0 100%,50% 40%,100% 100%,100% 100%);border-radius:10px}
+.env .lbl{position:absolute;bottom:10px;left:0;right:0;text-align:center;font-weight:800;color:#7a2a5a;font-size:14px;z-index:2}
+.env.open .flap{transform:rotateX(180deg)}.env.open .paper{transform:translateY(-50px)}
+.cat{width:170px;animation:bob 4s infinite ease-in-out}@keyframes bob{50%{transform:translateY(-6px)}}
+.moon{font-size:60px;animation:bob 5s infinite}
+.stamp{border:5px double #ff4f8b;color:#ff4f8b;border-radius:14px;padding:12px;font-weight:800;text-align:center;transform:rotate(-5deg);background:rgba(255,255,255,.92);animation:pop .6s;margin:8px 0}
+.conf{position:fixed;top:-30px;z-index:30;pointer-events:none;animation:fall 3s linear forwards;font-size:22px}
+@keyframes fall{to{transform:translateY(110vh) rotate(540deg)}}
+video,#snap{width:100%;border-radius:18px;background:#000;max-height:60vh;object-fit:contain}
+video{transform:scaleX(-1)}
+#certImg{width:100%;border-radius:8px;background:#fff;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%}
+#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);max-width:92%;background:#fff;color:#3a1a5a;padding:12px 16px;border-radius:14px;font-weight:700;z-index:60;box-shadow:0 6px 20px rgba(0,0,0,.4)}
+#ov{position:fixed;inset:0;z-index:50;background:rgba(10,8,35,.96);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;text-align:center}
+#printArea{display:none}
+@media print{body>*:not(#printArea){display:none!important}#printArea{display:block}#printArea img{width:210mm;height:297mm;display:block}@page{size:A4;margin:0}body{background:#fff}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="stars"></div><div id="hearts"></div>
+<div id="top"><button id="bMusic" class="off" title="Musik" aria-label="Musik">🎵</button><button id="bSfx" title="Efek suara" aria-label="Efek suara">🔊</button></div>
+
+<!-- 0 PEMBUKA -->
+<section class="scene on" id="s0">
+<div class="moon">🌙</div><div id="cat0"></div>
+<h1>HEIIII, NAURA ADELIAAAA! 🌙💗</h1>
+<p class="sub">Udah mau tidur, yaaa? Jangan tidur duluuu 😭 Ada satu manusia aneh yang nitip sesuatu buat kamu.</p>
+<div class="env" id="env"><div class="paper"></div><div class="flap"></div><div class="front"></div><div class="lbl">Surat rahasia dari GERDY 💌</div></div>
+<button class="btn" id="bOpen">💌 BUKA SURAT RAHASIA</button>
+<button class="btn alt" id="bSleepy">😴 AKU UDAH NGANTUK NIH</button>
+<div class="react hide" id="sleepy">LAHHH, BARU JUGA DATANG 😭 Satu menit ajaaa, habis ini boleh tidur. Eh, jangan lupa mimpi indah juga, yaa WKWKWK 💗</div>
+</section>
+
+<!-- 1 SURAT -->
+<section class="scene" id="s1">
+<h2>Surat untuk Naura 💌</h2>
+<div class="card" id="letter" style="min-height:240px"></div>
+<button class="btn alt hide" id="bSkip">⏭ Lewati animasi ketik</button>
+<button class="btn hide" id="bNext">Lanjut ▸</button>
+</section>
+
+<!-- 2 GAME -->
+<section class="scene" id="s2">
+<h2>Teka-Teki Gombal 🧩</h2>
+<div class="card" id="quiz">
+<div style="opacity:.8;font-weight:800" id="qNum"></div>
+<p style="font-size:20px;font-weight:800;margin:.3em 0" id="qText"></p>
+<div id="qOpts"></div>
+<div class="react hide" id="qReact"></div>
+<button class="btn hide" id="qNextBtn" style="margin-top:12px">Lanjut ▸</button>
+</div>
+<div class="card hide" id="gameDone" style="text-align:center">
+<div style="font-size:50px">💘</div>
+<div class="stamp">SELAMAT! NAURA ADELIA RESMI JADI TERSANGKA UTAMA DALAM KASUS BIKIN GERDY SENYUM-SENYUM SENDIRI 😭💘</div>
+<button class="btn" id="bToSurprise">BUKA KEJUTAN SELANJUTNYA 🎁</button>
+</div>
+</section>
+
+<!-- 3 KEJUTAN -->
+<section class="scene" id="s3">
+<h2>Kejutan Rahasia dari GERDY 🎁</h2>
+<button class="btn" id="bSurp">JANGAN DITEKAN KALAU NGGAK MAU SALTING 👀</button>
+<div class="card hide" id="surpCard">
+<p>Naura Adelia...
+
+Tau nggak kenapa aku sengaja bikin surat ini sebelum kamu tidur?
+
+Karena aku pengin jadi salah satu alasan kecil yang bikin kamu senyum hari ini.
+
+Bukan karena aku mau kamu mikirin aku terus-terusan, tapi kalau besok kamu tiba-tiba ingat surat ini terus senyum sendiri...
+
+<b>YAHHH, BERARTI MISI GERDY BERHASIL 😭💗</b>
+
+Dan kalau kamu sekarang bilang, 'IHHH GOMBAL BANGET!'
+
+<b>BERARTI KAMU BACA SAMPAI SINI, KANNN? KETAHUANNN 😭🫵🏻❤️</b></p>
+<button class="btn alt" id="bNoSalt">AKU NGGAK SALTING KOK! 😤</button>
+<div class="react hide" id="saltReact">IYAAA, IYAAA, NGGAK SALTING KATANYAAA 😭 Terus kenapa masih lanjut baca sampai sini, coba WKWKWK 💗</div>
+</div>
+<button class="btn hide" id="bToPhoto">LANJUT KE MISI FOTO 📸</button>
+</section>
+
+<!-- 4 MISI FOTO -->
+<section class="scene" id="s4">
+<h1>OPERASI PENANGKAPAN NAURA ADELIA 🚨💘</h1>
+<div class="card"><p>NAURA ADELIA, ANDA RESMI DIPANGGIL UNTUK MENJALANI MISI TERAKHIR 😭🫵🏻
+
+Dari hasil investigasi GERDY, ditemukan bahwa Anda diduga kuat telah melakukan tindakan:
+
+1. Membuat seseorang senyum-senyum sendiri.
+2. Menyebabkan nama Anda muncul tanpa diundang di pikiran seseorang.
+3. Membuat gombalan receh terasa sedikit masuk akal.
+4. Berpotensi menjadi alasan seseorang susah tidur karena kebanyakan mikir 😭💗
+
+Hukuman Anda adalah...
+
+<b>WAJIB MENGIKUTI SESI FOTO SERTIFIKAT!</b></p></div>
+<button class="btn" id="bReady">📸 SAYA SIAP MENJALANI MISI!</button>
+</section>
+
+<!-- 4b KAMERA -->
+<section class="scene" id="s4b">
+<h2>Sesi Foto 📸</h2>
+<p class="sub" id="camMsg">Foto hanya diproses di HP kamu untuk membuat sertifikat. Tidak diunggah ke mana pun.</p>
+<video id="vid" playsinline autoplay muted class="hide"></video>
+<img id="snap" class="hide" alt="Hasil foto">
+<button class="btn hide" id="bShoot">📷 AMBIL FOTO</button>
+<div class="row hide" id="useRow"><button class="btn alt" id="bRetake">🔄 ULANGI FOTO</button><button class="btn" id="bUse">✅ GUNAKAN FOTO INI</button></div>
+<button class="btn alt" id="bUpload">🖼️ UPLOAD DARI GALERI</button>
+<input type="file" id="file" accept="image/*" class="hide">
+<button class="btn alt" id="bCamRetry">🎥 Coba buka kamera lagi</button>
+</section>
+
+<!-- 5 SERTIFIKAT -->
+<section class="scene" id="s5">
+<h2>Sertifikat Resmi 💌</h2>
+<p class="sub hide" id="certStatus"></p>
+<img id="certImg" alt="Sertifikat Naura Adelia" class="hide">
+<div class="row">
+<button class="btn alt" id="bPrint" disabled>🖨️ CETAK SERTIFIKAT</button>
+<button class="btn alt" id="bPng" disabled>📥 SIMPAN JADI GAMBAR</button>
+<button class="btn alt" id="bPdf" disabled>📄 UNDUH PDF</button>
+<button class="btn" id="bSend" disabled>💌 KIRIM SERTIFIKAT KE GERDY</button>
+</div>
+<button class="btn alt hide" id="bCertRetry">🔁 Coba buat sertifikat lagi</button>
+<button class="btn alt" id="bChange">📷 Ganti foto</button>
+</section>
+
+<!-- 6 WHATSAPP -->
+<section class="scene" id="s6">
+<h1>NAURAAAA, MISI KAMU HAMPIR SELESAI! 😭💗</h1>
+<div class="card"><p>Sekarang sertifikat kelulusan dari akademi gombal sudah resmi terbit.
+
+Tapi ada satu syarat terakhir...
+
+<b>KIRIM HASILNYA KE GERDYYYY! 🫵🏻📸</b>
+
+Biar ada bukti bahwa kamu benar-benar menyelesaikan misi ini. WKWKWK.</p></div>
+<div class="card" style="background:rgba(255,255,255,.18)"><b>Cara kirim (manual, ya):</b>
+<ol style="margin:.4em 0;padding-left:20px"><li>Simpan sertifikat sebagai gambar atau PDF.</li><li>Tekan “Buka WhatsApp GERDY”.</li><li>Lampirkan file sertifikatnya sendiri, lalu tekan kirim di WhatsApp.</li></ol>
+<small id="savedNote">Catatan: website tidak bisa melampirkan file otomatis, jadi belum ada yang terkirim sebelum kamu menekan kirim di WhatsApp.</small></div>
+<div class="card"><pre id="waMsg" style="white-space:pre-wrap;font:inherit;margin:0"></pre></div>
+<button class="btn alt" id="bCopy">📋 SALIN PESAN</button>
+<button class="btn alt" id="bSave2">📥 SIMPAN SERTIFIKAT</button>
+<button class="btn" id="bWa">💚 BUKA WHATSAPP GERDY</button>
+<button class="btn alt" id="bToBye">Lanjut ke pesan terakhir 🌙</button>
+</section>
+
+<!-- 7 SELAMAT TIDUR -->
+<section class="scene" id="s7">
+<div class="moon">🌙</div><div id="cat7"></div>
+<div class="card"><p><b>Good night, Naura Adelia. 🌙💗</b>
+
+Makasih ya, udah mampir sebentar ke dunia kecil yang aku buat khusus buat kamu.
+
+Sekarang tutup HP-nya pelan-pelan, tarik napas, dan istirahat yang cukup.
+
+Jangan begadang terus, nanti bulan aja yang nemenin kamu sampai pagi 😭
+
+Semoga malam ini kamu tidur dengan tenang, bermimpi indah, dan besok bangun dengan senyum paling manis.
+
+Dan satu pesan terakhir dari GERDY...
+
+Kalau besok kamu tiba-tiba ingat seseorang sebelum membuka mata sepenuhnya...
+
+<b>AKU NGGAK MAU GEER, TAPI BOLEH DONG SEDIKIT 😭😭💗</b>
+
+Selamat tidur, Naura.
+
+Jangan lupa bahagia, yaa.
+
+— GERDY, manusia yang niatnya cuma ngucapin selamat malam, tapi malah bikin website sepanjang ini 😭💌</p></div>
+<button class="btn alt" id="bAgain">💗 BACA LAGI DARI AWAL</button>
+<button class="btn" id="bBye">🌙 OKE, GERDY, SELAMAT TIDUR JUGA!</button>
+<button class="btn alt" id="bHug">🐱 KIRIM PELUK VIRTUAL</button>
+</section>
+
+<div id="printArea"><img id="printImg" alt="Sertifikat"></div>
+<div id="toast" class="hide"></div>
+<div id="ov" class="hide"></div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const WA_NUM="6283185954674";
+const WA_MSG="GERDYYYY 😭💗 AKU UDAH SELESAI MISINYA!\n\nIni sertifikat resmi aku sebagai tersangka utama pembuat GERDY salting WKWKWK.\n\nNama: Naura Adelia\nStatus: Tersangka Spesial 💘\n\nIni hasil sertifikatku. Jangan ketawa yaaa 😭🫵🏻❤️";
+let photo=null,certURL=null,certPNG=null,saved=false,stream=null,tTimer;
+
+/* ---------- util ---------- */
+function go(id){$$('.scene').forEach(s=>s.classList.remove('on'));$('#'+id).classList.add('on');scrollTo(0,0)}
+function toast(m,ms=3800){const t=$('#toast');t.textContent=m;t.classList.remove('hide');clearTimeout(tTimer);tTimer=setTimeout(()=>t.classList.add('hide'),ms)}
+function cat(){return `<svg class="cat" viewBox="0 0 170 120"><ellipse cx="85" cy="92" rx="62" ry="24" fill="#c9b6ff"/><circle cx="55" cy="68" r="30" fill="#d9c9ff"/><path d="M30 50l6-26 20 14zM80 42l-4-24-20 20z" fill="#d9c9ff"/><path d="M42 70q6 6 12 0M60 70q6 6 12 0" stroke="#4a2a7a" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="56" cy="80" r="3" fill="#ff8fb8"/><path d="M130 85q30-10 20-40" stroke="#c9b6ff" stroke-width="12" fill="none" stroke-linecap="round"/><text x="100" y="40" fill="#fff" font-size="16" font-weight="800">z z Z</text></svg>`}
+$('#cat0').innerHTML=cat();$('#cat7').innerHTML=cat();
+for(let i=0;i<40;i++){const d=document.createElement('i');d.className='star';d.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${Math.random()*3}s`;$('#stars').appendChild(d)}
+if(!RM)setInterval(()=>{if(document.hidden||$('#hearts').children.length>10)return;const h=document.createElement('span');h.className='heart';h.textContent=['💗','💖','💕','✨'][Math.random()*4|0];h.style.left=Math.random()*95+'%';h.style.fontSize=14+Math.random()*16+'px';$('#hearts').appendChild(h);setTimeout(()=>h.remove(),7000)},900);
+function confetti(n=40){if(RM)return;for(let i=0;i<n;i++){const c=document.createElement('span');c.className='conf';c.textContent=['💗','✨','🎉','💘','⭐'][Math.random()*5|0];c.style.left=Math.random()*100+'%';c.style.animationDelay=Math.random()*.8+'s';document.body.appendChild(c);setTimeout(()=>c.remove(),4000)}}
+
+/* ---------- audio ---------- */
+let ac,sfxOn=true,musicOn=false,mi=0,mTimer;
+function ctx(){try{ac=ac||new(window.AudioContext||window.webkitAudioContext)();if(ac.state==='suspended')ac.resume()}catch(e){}return ac}
+function tone(f,d,v,type='sine'){const a=ctx();if(!a)return;const o=a.createOscillator(),g=a.createGain();o.type=type;o.frequency.value=f;g.gain.setValueAtTime(v,a.currentTime);g.gain.exponentialRampToValueAtTime(.0001,a.currentTime+d);o.connect(g).connect(a.destination);o.start();o.stop(a.currentTime+d)}
+function sfx(k){if(!sfxOn)return;if(k==='ok'){tone(660,.12,.08);setTimeout(()=>tone(880,.18,.08),110)}else if(k==='no')tone(200,.25,.07,'triangle');else tone(520,.08,.05)}
+const CH=[[261.6,329.6,392],[220,261.6,329.6],[174.6,220,261.6],[196,246.9,293.7]],PAT=[0,1,2,1];
+$('#bMusic').onclick=()=>{musicOn=!musicOn;$('#bMusic').classList.toggle('off',!musicOn);clearInterval(mTimer);if(musicOn){ctx();mTimer=setInterval(()=>{const c=CH[(mi>>2)%4];tone(c[PAT[mi%4]]*2,1.1,.035);if(mi%4===0)tone(c[0]/2,2,.05);mi++},500)}};
+$('#bSfx').onclick=()=>{sfxOn=!sfxOn;$('#bSfx').classList.toggle('off',!sfxOn);$('#bSfx').textContent=sfxOn?'🔊':'🔇'};
+document.addEventListener('click',e=>{if(e.target.closest('.btn'))sfx('tap')});
+
+/* ---------- 0 pembuka ---------- */
+$('#bOpen').onclick=()=>{$('#env').classList.add('open');$('#bOpen').disabled=true;setTimeout(()=>{go('s1');startLetter()},RM?100:1100)};
+$('#bSleepy').onclick=()=>{$('#sleepy').classList.remove('hide')};
+
+/* ---------- 1 surat ---------- */
+const LETTER=[
+"Untuk Naura Adelia, manusia yang mungkin sekarang lagi rebahan sambil scroll HP, padahal matanya udah tinggal dua watt 😭💗",
+"Haiii, Nauraa.\n\nSebelum kamu tidur, aku mau ngasih tahu satu hal penting.\n\nHari ini mungkin banyak hal yang bikin kamu capek. Jadi malam ini, jangan lupa istirahat yang cukup, yaa. Jangan terlalu keras sama diri sendiri.",
+"Tapi ada satu masalah yang belum bisa aku selesaikan...\n\nKENAPA SIH KAMU BISA KEPIKIRAN TERUS, PADAHAL KAMU BUKAN TUGAS SEKOLAH? 😭😭",
+"Kalau tugas sekolah aja bisa dikumpulin, kamu kok malah ngumpul terus di pikiran aku? Tolong, ini otak apa ruang VIP buat Naura? 😭💗",
+"Terus yaaa, aku punya teori.\n\nKatanya sebelum tidur, manusia biasanya memikirkan hal-hal yang bikin bahagia.\n\nPantesan aku susah berhenti mikirin kamu.\n\nTAPI TENANG, AKU BELUM SEPARAH ITU KOK.",
+"Aku cuma senyum sendiri, baca chat sendiri, terus mikir sendiri...\n\n'Ini orang kok bisa bikin hari biasa jadi luar biasa, ya?'\n\nNAHHH, KALAU BESOK AKU SENYUM-SENYUM SENDIRI, KAMU HARUS TANGGUNG JAWAB 😭💗",
+"Pokoknya malam ini, semoga tidur kamu nyenyak, mimpinya indah, dan besok bangun dengan hati yang lebih ringan.",
+"Kalau nanti sebelum tidur kamu tiba-tiba senyum tanpa alasan...\n\nJangan-jangan ada satu nama yang nyasar ke pikiran kamu juga.\n\nKalau ada, yaudah, jangan diusir dulu. Siapa tahu dia cuma mau bilang selamat malam.\n\nHehehe. 😭💗"];
+let li=0,typing=null;
+function startLetter(){li=0;$('#letter').innerHTML='';$('#bNext').classList.add('hide');chunk()}
+function chunk(){
+  const p=document.createElement('p');$('#letter').appendChild(p);
+  const ch=Array.from(LETTER[li]);let i=0;$('#bNext').classList.add('hide');$('#bSkip').classList.remove('hide');
+  const done=()=>{clearInterval(typing);typing=null;p.textContent=LETTER[li];$('#bSkip').classList.add('hide');
+    const last=li>=LETTER.length-1;const b=$('#bNext');b.textContent=last?'LANJUT KE MISI RAHASIA ➜':'Lanjut ▸';b.classList.remove('hide');b.scrollIntoView({block:'nearest',behavior:'smooth'})};
+  p._done=done;
+  if(RM){done();return}
+  typing=setInterval(()=>{i++;p.textContent=ch.slice(0,i).join('');if(i%25===0)scrollTo(0,document.body.scrollHeight);if(i>=ch.length)done()},24);
+}
+$('#bSkip').onclick=$('#letter').onclick=()=>{if(typing)$('#letter').lastChild._done()};
+$('#bNext').onclick=()=>{if(li>=LETTER.length-1){go('s2');renderQ()}else{li++;chunk()}};
+
+/* ---------- 2 game ---------- */
+const Q=[
+{q:"Apa bedanya kamu sama alarm?",o:["Alarm bikin bangun.","Kamu bikin aku susah tidur.","Dua-duanya bikin jantung berisik."],ok:1,good:"BENARRR 😭💗 Kalau alarm bisa dimatiin, kalau kamu muncul di pikiran, tombol OFF-nya mana?!",bad:{0:"Itu mah alarm biasa 😭 Aku nanyanya yang lebih... bikin begadang. Coba lagi yaa!",2:"Eh, itu juga lumayan bener sih 😳 Tapi ada jawaban yang lebih jujur. Coba lagi 💗"}},
+{q:"Kenapa aku nggak cocok jadi pencuri?",o:["Takut ketahuan.","Nggak punya motor.","Karena yang berhasil kamu curi malah perhatian aku."],ok:2,good:"WADUHHH, NAURA INI KASUSNYA UDAH BERAT 😭❤️ Perhatian hilang, tersangkanya malah lagi baca surat ini.",bad:{0:"Takut ketahuan? Wah, berarti ada bakat terpendam 😭 Coba lagi!",1:"WKWKWK motor mah urusan lain 😭 Coba lagi yaa!"}},
+{q:"Kalau kamu jadi mimpi, aku harus gimana?",o:["Bangun.","Tidur lagi.","Pasang alarm supaya nggak kesiangan."],ok:1,good:"HAHAHA, JANGAN BANGUN DULU 😭💗 Tapi serius, semoga malam ini kamu mimpi indah.",bad:{0:"BANGUN?! Jangan dong, lagi bagus-bagusnya 😭 Coba lagi!",2:"Alarmnya jangan dipasang dulu 😭 Coba lagi yaa!"}}];
+let qi=0;
+function renderQ(){qi=qi||0;const q=Q[qi];$('#quiz').classList.remove('hide');$('#gameDone').classList.add('hide');
+  $('#qNum').textContent=`Teka-teki ${qi+1} dari ${Q.length}`;$('#qText').textContent=q.q;$('#qReact').classList.add('hide');$('#qNextBtn').classList.add('hide');
+  const box=$('#qOpts');box.innerHTML='';
+  q.o.forEach((t,i)=>{const b=document.createElement('button');b.className='btn alt opt';b.textContent='ABC'[i]+'. '+t;b.onclick=()=>pick(i,b);box.appendChild(b)})}
+function pick(i,b){const q=Q[qi],r=$('#qReact');r.classList.remove('hide');r.style.animation='none';r.offsetHeight;r.style.animation='';
+  if(i===q.ok){sfx('ok');r.textContent=q.good;$$('#qOpts .btn').forEach(x=>x.disabled=true);b.style.background='linear-gradient(135deg,#ff6fa8,#b46cff)';confetti(14);
+    const n=$('#qNextBtn');n.textContent=qi>=Q.length-1?'Selesai! 💘':'Lanjut ▸';n.classList.remove('hide')}
+  else{sfx('no');r.textContent=q.bad[i];b.classList.remove('shake');b.offsetHeight;b.classList.add('shake')}}
+$('#qNextBtn').onclick=()=>{if(qi>=Q.length-1){$('#quiz').classList.add('hide');$('#gameDone').classList.remove('hide');confetti(60);sfx('ok')}else{qi++;renderQ()}};
+$('#bToSurprise').onclick=()=>go('s3');
+
+/* ---------- 3 kejutan ---------- */
+$('#bSurp').onclick=()=>{$('#bSurp').classList.add('hide');$('#surpCard').classList.remove('hide');confetti(20)};
+$('#bNoSalt').onclick=()=>{$('#bNoSalt').classList.add('hide');$('#saltReact').classList.remove('hide');$('#bToPhoto').classList.remove('hide');$('#bToPhoto').scrollIntoView({behavior:'smooth',block:'center'})};
+$('#bToPhoto').onclick=()=>go('s4');
+
+/* ---------- 4 kamera ---------- */
+function camMsg(m){$('#camMsg').textContent=m}
+function stopCam(){if(stream){stream.getTracks().forEach(t=>t.stop());stream=null}$('#vid').srcObject=null}
+async function startCam(){
+  $('#snap').classList.add('hide');$('#useRow').classList.add('hide');
+  if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){camMsg('Browser ini belum mendukung kamera (atau halaman belum dibuka lewat https). Tenang, kamu bisa upload foto dari galeri 👇');$('#vid').classList.add('hide');$('#bShoot').classList.add('hide');return}
+  try{camMsg('Mengizinkan kamera… tekan “Izinkan” di browser ya 📷');
+    stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'user'},audio:false});
+    const v=$('#vid');v.srcObject=stream;await v.play().catch(()=>{});v.classList.remove('hide');$('#bShoot').classList.remove('hide');
+    camMsg('Siap? Senyum yang manis, lalu tekan AMBIL FOTO 😭💗')}
+  catch(e){$('#vid').classList.add('hide');$('#bShoot').classList.add('hide');camMsg('Kamera tidak bisa dibuka (izin ditolak atau kamera tidak tersedia). Nggak apa-apa! Pilih foto dari galeri aja lewat tombol di bawah 👇')}}
+$('#bReady').onclick=()=>{go('s4b');startCam()};
+$('#bCamRetry').onclick=startCam;
+$('#bShoot').onclick=()=>{const v=$('#vid');if(!v.videoWidth){toast('Kamera belum siap, tunggu sebentar ya.');return}
+  const c=document.createElement('canvas');c.width=v.videoWidth;c.height=v.videoHeight;c.getContext('2d').drawImage(v,0,0);
+  showSnap(c.toDataURL('image/jpeg',.92));sfx('ok')};
+function showSnap(src){$('#snap').src=src;$('#snap').classList.remove('hide');$('#vid').classList.add('hide');$('#bShoot').classList.add('hide');$('#useRow').classList.remove('hide');camMsg('Hasilnya gimana? Pakai foto ini atau ulangi?')}
+$('#bRetake').onclick=()=>{if(stream){$('#snap').classList.add('hide');$('#useRow').classList.add('hide');$('#vid').classList.remove('hide');$('#bShoot').classList.remove('hide')}else startCam()};
+$('#bUpload').onclick=()=>$('#file').click();
+$('#file').onchange=e=>{const f=e.target.files[0];if(!f)return;if(!f.type.startsWith('image/')){toast('Pilih file gambar ya.');return}
+  const r=new FileReader();r.onload=()=>{stopCam();showSnap(r.result)};r.onerror=()=>toast('Gagal membaca foto. Coba foto lain.');r.readAsDataURL(f);e.target.value=''};
+$('#bUse').onclick=()=>{const im=new Image();im.onload=()=>{photo=im;stopCam();go('s5');makeCert()};im.onerror=()=>toast('Fotonya gagal dimuat, coba ulangi.');im.src=$('#snap').src};
+
+/* ---------- 5 sertifikat ---------- */
+function fontsReady(){const l=Promise.all([document.fonts.load('96px Pacifico'),document.fonts.load('800 30px Nunito'),document.fonts.load('400 30px Nunito')]).catch(()=>{});return Promise.race([l,new Promise(r=>setTimeout(r,2500))])}
+function wrap(x,t,cx,y,maxW,lh){const words=t.split(' ');let line='';for(const w of words){const test=line?line+' '+w:w;if(x.measureText(test).width>maxW&&line){x.fillText(line,cx,y);y+=lh;line=w}else line=test}x.fillText(line,cx,y);return y}
+async function buildCanvas(){
+  await fontsReady();
+  const W=1240,H=1754,c=document.createElement('canvas');c.width=W;c.height=H;const x=c.getContext('2d');x.textAlign='center';
+  const g=x.createLinearGradient(0,0,W,H);g.addColorStop(0,'#fff6fa');g.addColorStop(.5,'#ffeaf3');g.addColorStop(1,'#f1e6ff');x.fillStyle=g;x.fillRect(0,0,W,H);
+  x.strokeStyle='#c9a24b';x.lineWidth=10;x.strokeRect(36,36,W-72,H-72);x.strokeStyle='#4a2a7a';x.lineWidth=3;x.strokeRect(58,58,W-116,H-116);x.strokeStyle='#f4a6c6';x.lineWidth=2;x.strokeRect(70,70,W-140,H-140);
+  x.font='40px Nunito,sans-serif';[[110,130],[W-110,130],[110,H-90],[W-110,H-90]].forEach(([a,b])=>{x.fillStyle='#ff6fa8';x.fillText('❤',a,b)});
+  x.font='28px Nunito,sans-serif';x.fillStyle='#c9a24b';[[200,180],[W-200,180],[170,600],[W-170,640],[190,900],[W-190,880]].forEach(([a,b],i)=>x.fillText(i%2?'✦':'★',a,b));
+  x.fillStyle='#ffb0cf';x.font='34px Nunito,sans-serif';[[160,740],[W-160,760],[170,1000],[W-170,1020]].forEach(([a,b])=>x.fillText('❤',a,b));
+  x.fillStyle='#4a2a7a';x.font='800 56px Nunito,sans-serif';x.fillText('SERTIFIKAT RESMI 💌',W/2,135);
+  x.fillStyle='#c9a24b';x.font='800 30px Nunito,sans-serif';x.fillText('PENGHARGAAN KHUSUS',W/2,185);
+  x.fillStyle='#6b4a8a';x.font='24px Nunito,sans-serif';x.fillText('DIBERIKAN KEPADA',W/2,230);
+  x.fillStyle='#d6336c';x.font='96px Pacifico,cursive';x.fillText('NAURA ADELIA',W/2,325);
+  // polaroid (foto tidak dipotong / tidak gepeng)
+  const iw=photo.naturalWidth,ih=photo.naturalHeight,s=Math.min(520/iw,420/ih),pw=iw*s,ph=ih*s,fw=pw+44,fh=ph+44+84,fx=(W-fw)/2,fy=350+(544-fh)/2;
+  x.save();x.translate(W/2,fy+fh/2);x.rotate(-.025);x.shadowColor='rgba(74,42,122,.35)';x.shadowBlur=24;x.shadowOffsetY=8;x.fillStyle='#fff';x.fillRect(-fw/2,-fh/2,fw,fh);x.shadowColor='transparent';
+  x.fillStyle='#f3eaf7';x.fillRect(-pw/2,-fh/2+22,pw,ph);x.drawImage(photo,-pw/2,-fh/2+22,pw,ph);
+  x.fillStyle='#d6336c';x.font='34px Pacifico,cursive';x.fillText('Naura Adelia 💗',0,fh/2-30);x.restore();
+  x.fillStyle='#4a2a7a';x.font='28px Nunito,sans-serif';x.fillText('Atas keberhasilannya meraih gelar:',W/2,935);
+  x.fillStyle='#d6336c';x.font='800 40px Nunito,sans-serif';let y=wrap(x,'“TERSANGKA UTAMA PEMBUAT GERDY SALTING DAN SENYUM-SENYUM SENDIRI” 😭💗',W/2,995,940,54);
+  x.fillStyle='#4a2a7a';x.font='26px Nunito,sans-serif';y=wrap(x,'Dengan ini dinyatakan bahwa Naura Adelia telah menyelesaikan misi gombalan sebelum tidur dengan tingkat kelucuan dan kemanisan yang mencurigakan.',W/2,y+62,900,38);
+  x.font='800 30px Nunito,sans-serif';x.fillStyle='#b4236a';x.fillText('STATUS: TERSANGKA SPESIAL ⭐',W/2,y+68);x.fillText('TINGKAT BAHAYA: 100/10 💘',W/2,y+110);
+  x.font='24px Nunito,sans-serif';x.fillStyle='#4a2a7a';wrap(x,'EFEK SAMPING: Berpotensi diingat sebelum tidur dan setelah bangun.',W/2,y+152,900,34);
+  // tanda tangan
+  x.textAlign='left';x.fillStyle='#6b4a8a';x.font='24px Nunito,sans-serif';x.fillText('Ditetapkan oleh:',170,1490);
+  x.fillStyle='#4a2a7a';x.font='64px Pacifico,cursive';x.fillText('GERDY',170,1560);
+  x.font='800 24px Nunito,sans-serif';x.fillText('Ketua Komisi Gombal Sebelum Tidur',170,1598);
+  x.font='22px Nunito,sans-serif';x.fillStyle='#6b4a8a';x.fillText('Diterbitkan: '+new Date().toLocaleDateString('id-ID',{day:'numeric',month:'long',year:'numeric'}),170,1636);
+  x.textAlign='center';
+  x.save();x.translate(1010,1560);x.rotate(-.26);x.strokeStyle='#e0457b';x.fillStyle='#e0457b';x.lineWidth=7;x.beginPath();x.arc(0,0,88,0,7);x.stroke();x.lineWidth=2;x.beginPath();x.arc(0,0,74,0,7);x.stroke();
+  x.font='800 30px Nunito,sans-serif';x.fillText('RESMI',0,-6);x.font='800 15px Nunito,sans-serif';x.fillText('KOMISI GOMBAL',0,20);x.font='24px Nunito,sans-serif';x.fillText('❤ ★ ❤',0,-34);x.font='800 14px Nunito,sans-serif';x.fillText('GERDY',0,46);x.restore();
+  x.fillStyle='#8a6aa8';x.font='italic 19px Nunito,sans-serif';wrap(x,'Sertifikat ini tidak memiliki kekuatan hukum. Diterbitkan khusus untuk keperluan bercanda dan bikin senyum-senyum sendiri. 😭',W/2,1668,980,26);
+  return c;
+}
+async function makeCert(){
+  certURL=certPNG=null;saved=false;$('#certImg').classList.add('hide');$('#bCertRetry').classList.add('hide');
+  $$('#s5 .row .btn').forEach(b=>b.disabled=true);const st=$('#certStatus');st.classList.remove('hide');st.textContent='Sedang menerbitkan sertifikat… ✨';
+  try{const c=await buildCanvas();certURL=c.toDataURL('image/jpeg',.93);certPNG=c;
+    $('#certImg').src=certURL;$('#printImg').src=certURL;$('#certImg').classList.remove('hide');
+    st.textContent='Sertifikat sudah terbit! 🎉 Tekan lama gambar kalau tombol simpan tidak jalan di browser kamu.';$$('#s5 .row .btn').forEach(b=>b.disabled=false);confetti(30);sfx('ok')}
+  catch(e){st.textContent='Yah, sertifikatnya gagal dibuat 😭 Coba lagi, atau ganti fotonya.';$('#bCertRetry').classList.remove('hide')}}
+$('#bCertRetry').onclick=makeCert;
+$('#bChange').onclick=()=>{go('s4b');startCam()};
+function dl(href,name){const a=document.createElement('a');a.href=href;a.download=name;document.body.appendChild(a);a.click();a.remove()}
+function needCert(){if(!certURL){toast('Sertifikat belum siap.');return true}return false}
+function savePng(){if(needCert())return;certPNG.toBlob(b=>{if(!b){toast('Gagal membuat gambar. Coba lagi ya.');return}const u=URL.createObjectURL(b);dl(u,'Sertifikat-Naura-Adelia.png');setTimeout(()=>URL.revokeObjectURL(u),8000);saved=true;toast('Gambar diunduh. Kalau tidak muncul, tekan lama sertifikat lalu pilih Simpan gambar.')},'image/png')}
+function savePdf(){if(needCert())return;try{const b64=certURL.split(',')[1],bin=atob(b64),jpg=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)jpg[i]=bin.charCodeAt(i);
+  const E=s=>new TextEncoder().encode(s),parts=[],off=[];let len=0;const add=u=>{parts.push(u);len+=u.length},obj=(n,b)=>{off[n]=len;add(E(n+' 0 obj\n'+b+'\nendobj\n'))};
+  add(E('%PDF-1.4\n'));obj(1,'<</Type/Catalog/Pages 2 0 R>>');obj(2,'<</Type/Pages/Kids[3 0 R]/Count 1>>');obj(3,'<</Type/Page/Parent 2 0 R/MediaBox[0 0 595 842]/Resources<</XObject<</Im0 4 0 R>>>>/Contents 5 0 R>>');
+  off[4]=len;add(E('4 0 obj\n<</Type/XObject/Subtype/Image/Width 1240/Height 1754/ColorSpace/DeviceRGB/BitsPerComponent 8/Filter/DCTDecode/Length '+jpg.length+'>>\nstream\n'));add(jpg);add(E('\nendstream\nendobj\n'));
+  const cs='q 595 0 0 842 0 0 cm /Im0 Do Q';obj(5,'<</Length '+cs.length+'>>\nstream\n'+cs+'\nendstream');
+  const xo=len;let xr='xref\n0 6\n0000000000 65535 f \n';for(let i=1;i<=5;i++)xr+=String(off[i]).padStart(10,'0')+' 00000 n \n';xr+='trailer\n<</Size 6/Root 1 0 R>>\nstartxref\n'+xo+'\n%%EOF';add(E(xr));
+  const u=URL.createObjectURL(new Blob(parts,{type:'application/pdf'}));dl(u,'Sertifikat-Naura-Adelia.pdf');setTimeout(()=>URL.revokeObjectURL(u),8000);saved=true;toast('PDF diunduh. Cek folder Download di HP kamu.')}
+  catch(e){toast('Gagal membuat PDF 😭 Coba lagi, atau simpan sebagai gambar.')}}
+function doPrint(){if(needCert())return;setTimeout(()=>window.print(),150)}
+$('#bPng').onclick=savePng;$('#bPdf').onclick=savePdf;$('#bPrint').onclick=doPrint;$('#bSave2').onclick=savePng;
+$('#bSend').onclick=()=>{if(needCert())return;go('s6');$('#waMsg').textContent=WA_MSG;
+  $('#savedNote').textContent=saved?'Sertifikat sudah kamu simpan. Tinggal lampirkan filenya di WhatsApp, lalu tekan kirim sendiri ya.':'Sertifikat belum disimpan. Tekan “Simpan Sertifikat” dulu supaya filenya ada di HP kamu. Website tidak bisa melampirkan file otomatis, jadi belum ada yang terkirim sebelum kamu menekan kirim di WhatsApp.'};
+
+/* ---------- 6 WhatsApp ---------- */
+$('#bCopy').onclick=async()=>{try{await navigator.clipboard.writeText(WA_MSG)}catch(e){const t=document.createElement('textarea');t.value=WA_MSG;document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(_){toast('Gagal menyalin. Tahan teks pesan lalu salin manual ya.');t.remove();return}t.remove()}toast('Pesan tersalin 📋')};
+$('#bWa').onclick=()=>{if(!saved&&certURL&&confirm('Sertifikat belum disimpan. Simpan dulu sebagai gambar?\n\nOK = simpan dulu, Batal = langsung buka WhatsApp')){savePng();return}
+  window.open('https://wa.me/'+WA_NUM+'?text='+encodeURIComponent(WA_MSG),'_blank');toast('WhatsApp dibuka. Ingat: lampirkan file sertifikatnya sendiri, lalu tekan kirim di WhatsApp ya 💚',6000)};
+$('#bToBye').onclick=()=>{go('s7');confetti(20)};
+
+/* ---------- 7 penutup ---------- */
+function ov(html){const o=$('#ov');o.innerHTML=html;o.classList.remove('hide');o.querySelector('[data-x]').onclick=()=>o.classList.add('hide')}
+$('#bAgain').onclick=()=>{photo=certURL=certPNG=null;saved=false;stopCam();qi=0;$('#env').classList.remove('open');$('#bOpen').disabled=false;$('#sleepy').classList.add('hide');
+  $('#bSurp').classList.remove('hide');$('#surpCard').classList.add('hide');$('#bNoSalt').classList.remove('hide');$('#saltReact').classList.add('hide');$('#bToPhoto').classList.add('hide');go('s0')};
+$('#bBye').onclick=()=>ov('<div class="moon">🌙</div>'+cat()+'<h2>Selamat tidur, Naura 🌙</h2><p class="sub">GERDY juga bobo, kok.<br>Tarik napas pelan-pelan, mimpi indah ya 💗</p><button class="btn alt" data-x style="max-width:300px">Kembali</button>');
+$('#bHug').onclick=()=>{const hug='<svg viewBox="0 0 240 150" width="260" class="cat"><g fill="#d9c9ff"><circle cx="90" cy="80" r="34"/><path d="M62 60l4-30 22 16zM116 52l-6-28-20 18z"/></g><g fill="#ffd1e3"><circle cx="150" cy="80" r="34"/><path d="M178 60l-4-30-22 16zM124 52l6-28 20 18z"/></g><g stroke="#4a2a7a" stroke-width="3" fill="none" stroke-linecap="round"><path d="M76 82q5 5 10 0M96 82q5 5 10 0M136 82q5 5 10 0M156 82q5 5 10 0"/></g><path d="M105 120q15 15 30 0" stroke="#c9b6ff" stroke-width="12" fill="none" stroke-linecap="round"/><text x="108" y="30" font-size="28">💗</text></svg>';
+  ov(hug+'<h2>*peluk virtual* 🤗</h2><p class="sub">Hangat, kan? Sekarang bobo yaa 💗</p><button class="btn alt" data-x style="max-width:300px">Tutup</button>');confetti(30)};
+</script>
+</body>
+</html>
